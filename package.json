@@ -1,0 +1,19 @@
+{
+  "name": "nshape",
+  "version": "1.0.0",
+  "description": "workout scheduler and log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbeebe13/nShape.git"
+  },
+  "author": "Austin Alderete, Brody Bebee, Keegan Jasalsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbeebe13/nShape/issues"
+  },
+  "homepage": "https://github.com/bbeebe13/nShape#readme"
+}
