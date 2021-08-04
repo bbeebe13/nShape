@@ -1,20 +1,22 @@
-nShape Workout Tracker
-https://github.com/bbeebe13/nShape.git Generator GitHub license
+# nShape Workout Tracker
+* https://github.com/bbeebe13/nShape.git Generator GitHub license
 
-Description
+# Description
 This projects helps you track your workouts and help keep track of them.
 
-Table of Contents
-Installation
-Usage
-License
-Contributing
-Tests
-Questions
-Installation
+# Table of Contents 
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+# Installation
 Run npm install
 
-Usage
+# Usage
 Log into mysql on your terminal
 mysql -u root -p
 Then your password
@@ -27,14 +29,13 @@ DB_PASSWORD=''
 
 Run npm start.
 
-License
+# License
 none
 
-Contributing
+# Contributing
 ​Contributors: Austin Alderete, Brody Bebee, Keegan Jasalsky
 
-Tests
+# Tests
 The following is needed to run the test: node sever.js
 
-Questions
-If you have any questions about the repo, open an issue or contact austinald1 directly at : austinalderete1@gmail.com.
+# Questions
