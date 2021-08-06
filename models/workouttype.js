@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize');
+const sequelize = require('../config/connection.js');
 module.exports = (sequelize, DataTypes) => {
   class WorkoutType extends Model {
     /**
