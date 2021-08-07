@@ -23,10 +23,27 @@
       <li><a href="#">Contact us</a></li>
     </ul>
   </div>
-  <div class="top-bar-right">
+  <div class="top-bar-left">
     <ul class="menu">
-      <li><a href="#">My Account</a></li>
-      <li><a class="button">Login</a></li>
+      <ul class="dropdown menu" data-dropdown-menu>
+        <div id="login-dropdown" class="f-dropdown small content" data-dropdown-content="true">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+              <a href="#">Login or Sign Up</a>
+              <ul class="vertical dropdown menu">
+                <form class="log-in-form">
+                  <h4 class="text-center">Log in with you email account</h4>
+                  <label>Email
+                    <input type="email" placeholder="somebody@example.com">
+                  </label>
+                  <label>Password
+                    <input type="password" placeholder="Password">
+                  </label>
+                  <p><input type="submit" class="button expanded" value="Log in"></input></p>
+                  <p class="text-center"><a href="#">Forgot your password?</a></p>
+                </form>
+                <!-- ... -->
+      </div>
     </ul>
   </div>
 </div>
@@ -82,24 +99,25 @@
     <div class="callout">
       <p>Fat Loss</p>
       <p><img src="assets/images/fatloss.jpg" alt="fat loss"></p>
-      <p class="lead">asdfasdfe</p>
-      <p class="subheader">asdfasdfasdf</p>
+      <p class="lead">HIIT Based Workout</p>
+      <p class="subheader">High-Intensity Interval Training. This training is a cardiovascular exercise alternating short periods of intense exercise with less intense recover periods.</p>
     </div>
   </div>
   <div class="column">
     <div class="callout">
       <p>Strength Gain</p>
       <p><img src="assets/images/Strength.jpg" alt="strength"></p>
-      <p class="lead">asdfasdfadsf</p>
-      <p class="subheader">asdfasdf</p>
+      <p class="lead">Body Building</p>
+      <p class="subheader">This training will focus on low repition high weight. Resulting in larger more bulky look.
+      </p>
     </div>
   </div>
   <div class="column">
     <div class="callout">
       <p>Tone</p>
       <p><img src="assets/images/tone.jpg" alt="tone"></p>
-      <p class="lead">asdfasdfasdf</p>
-      <p class="subheader">asdfasdf</p>
+      <p class="lead">Sculpting</p>
+      <p class="subheader"></p>
     </div>
   </div>
 
