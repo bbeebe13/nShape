@@ -20,6 +20,9 @@ body {
   background: white;
   border-radius: 10px;
 }
+h1, .title.is-1, h2, .subtitle.colored.is-4, p, input.is-medium, title.is-4, a {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 
 .left,
 .right {
@@ -81,6 +84,10 @@ body {
 
 input {
   font-size: 1rem;
+}
+
+.input.is-medium { 
+  border-radius: 1px solid black;
 }
 
 input:focus {
