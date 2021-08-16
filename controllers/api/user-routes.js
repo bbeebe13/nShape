@@ -1,9 +1,11 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const User  = require('../../models/user');
 
 router.post('/', async (req, res) => {
     console.log("Signup route")
   try {
+
+    
     const userData = await User.create(
       {
         user_name: req.body.name,
@@ -27,19 +29,29 @@ router.post('/', async (req, res) => {
 router.post('/login', async (req, res) => {
     console.log("Login Route")
   try {
+
+  
+    console.log("userName: " + req.body.userName)
+    console.log("userPassword: " +req.body.userPassword)
+
     const userData = await User.findOne({ where: { 
-      user_name: req.body.userName } });
+      Username: "admin" } });
     console.log('UserData ',userData)
     if (!userData) {
+      console.log("B");
       res
         .status(400)
         .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
 
+    console.log("AB");
+
     const validPassword = await userData.checkPassword(req.body.userPassword);
     console.log('validPassword ',validPassword)
     if (!validPassword) {
+      
+    console.log("C");
       console.log("!ValidPassword")
       res
         .status(400)
@@ -48,6 +60,7 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
+      console.log("D");
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
@@ -55,6 +68,8 @@ router.post('/login', async (req, res) => {
     });
 
   } catch (err) {
+    console.log("E");
+    console.log(err);
     res.status(400).json(err);
   }
 });
