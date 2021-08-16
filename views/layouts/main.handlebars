@@ -1,39 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nShape</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/Style.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <section class="hero is-medium">
+    <div class="hero-head">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">nShape</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-active">
+                nShape
+              </a>
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                    <span>Login or Sign Up</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <a href="/login" class="dropdown-item is-active">
+                        Login
+                      </a>
+                      <a href="/login" class="dropdown-item is-active">
+                        Sign Up
+                      </a>
+                     <a href="/logout" class="dropdown-item is-active">
+                          Logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+        <div class="columns">
+            <div class="column1">
+                <div class="column is-15 featured-content">
+              <p><Strong>The Start of Being the Best You</Strong></p>
+            </div>
+        </div>
+            <div class="column2">
+              <img src="/images/logo image.JPG" alt="Company logo 'nShape'">
+            </div>
+  </section>
+</section>
+
+
+<main>
+    {{{ body }}}
+</main>
+
+
 </body>
-
 </html>

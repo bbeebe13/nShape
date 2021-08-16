@@ -2,6 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('WorkoutTypes', null, {});
     await queryInterface.bulkInsert('WorkoutTypes', [
       {
       WorkoutTypeName: 'Fat Loss'
