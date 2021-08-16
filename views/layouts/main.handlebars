@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nShape</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="css/{{Style}}" />
+    <link rel="stylesheet" href="/css/Style.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -36,16 +39,20 @@
                 <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                   <div class="dropdown-content">
                     <div class="dropdown-item">
-                      <a href="./LoginPage.html" class="dropdown-item is-active">
+                      <a href="/login" class="dropdown-item is-active">
                         Login
                       </a>
-                      <a href="./SignUpPage.html" class="dropdown-item is-active">
+                      <a href="/login" class="dropdown-item is-active">
                         Sign Up
+                      </a>
+                     <a href="/logout" class="dropdown-item is-active">
+                          Logout
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
+
                 </div>
               </div>
                 </div>
@@ -62,58 +69,16 @@
             </div>
         </div>
             <div class="column2">
-              <img src="./assets/images/logo image.JPG" alt="Company logo 'nShape'">
+              <img src="/images/logo image.JPG" alt="Company logo 'nShape'">
             </div>
   </section>
 </section>
-<section class="section">
-  <div class="container">
-    <h1 class="title">About Us</h1>
-    <h2 class="subtitle">
-      When starting your journey in the gym everyone needs a starting point. You may feel that you do not have enough knowedge to create your own workouts or feel burnt out doing the same ones. That is where we come in! nShape provides workouts for you to follow from weight loss to body building. Even including at home workouts! 
-    </h2>
-  </div>
-</section>
-          <div class="columns is-multiline">
-            <div class="column post is-3">
-                <div class="column is-12 post-img">
-                  <img src="./assets/images/fatloss.jpg" alt="Featured Image">
-                </div>
-                <div class="column is-12 featured-content ">
-                  <h1 class="title post-title">Fat Loss Workout</h1>
-                  <h3 class="heading post-category">HIIT Based Workout</h3>
-                  <p class="post-excerpt">High-Intensity Interval Training. This training is a cardiovascular exercise alternating short periods of intense exercise with less intense recover periods.</p>
-                  <br>
-                </div>
-              </article>
-            </div>
-            <div class="column post is-3">
-                <div class="column is-12 post-img">
-                  <img src="./assets/images/Strength.jpg" alt="Featured Image">
-                </div>
-                <div class="column is-12 featured-content ">
-                  <h1 class="title post-title">Strength Gain</h1>
-                  <h3 class="heading post-category">Body Building</h3>
-                  <p class="post-excerpt">This training will focus on low repition high weight. Resulting in larger more bulky look. This workout is typically used by those with expierience working out.</p>
-                  <br>
-                </div>
-              </article>
-            </div>
 
-            <div class="column post is-3">
-              <article class="columns is-multiline">
-                <div class="column is-12 post-img">
-                  <img src="./assets/images/tone.jpg" alt="Featured Image">
-                </div>
-                <div class="column is-12 featured-content ">
-                  <h1 class="title post-title">At home workouts</h1>
-                  <h3 class="heading post-category">Workout in the Comfort of your home! No Weights required</h3>
-                  <p class="post-excerpt">If you are low on time or money. This is a great alternative to going to the gym. This workout is a fat loss based workout to help boost metabolism and cardio</p>
-                  <br>
-                </div>
-              </article>
-            </div>
-        </div>
-      </div>
-  </section>
+
+<main>
+    {{{ body }}}
+</main>
+
+
 </body>
+</html>

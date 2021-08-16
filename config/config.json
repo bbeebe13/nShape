@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "nShape_db",
-    "host": "127.0.0.1",
+    "username": "ex2a4ifxrgev3acc",
+    "password": "sqsqocxnptsab5vl",
+    "database": "ks8k6yua4hj9ry21",
+    "host": "grp6m5lz95d9exiz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
